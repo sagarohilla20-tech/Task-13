@@ -1,48 +1,17 @@
-let a = 1;
-let b =2;
-let c =3;
-let d=4 ;
-let e= 5;
+const numbers =[2,5,6,8,9];
 
-const result1 = a%2;
-
-if(result1){
-    result1==0;
-    console.log("The given number 1 is Odd.");
-}else{
-       console.log("The given number 1 is Even.");
+function checkOddEven(numbers) {
+    const result = numbers % 2;
+    
+    if (result === 0) {
+        console.log("The given number", numbers, "is Even.");
+    } else {
+        console.log("The given number", numbers, "is Odd.");
+    }
 }
 
-const result2 = b%2;
-if(result2){
-    result2==0;
-    console.log("The given number 2 is Odd.");
-}else{
-       console.log("The given number 2 is Even.");
-}
-
-const result3 = c%2;
-if(result3){
-    result3==0;
-    console.log("The given number 3 is Odd.");
-}else{
-       console.log("The given number 3 is Even.");
-}
-
-
-const result4 = d%2;
-if(result4){
-    result4==0;
-    console.log("The given number 4 is Odd.");
-}else{
-       console.log("The given number 4 is Even.");
-}
-
-
-const result5 = e%2;
-if(result5){
-    result5==0;
-    console.log("The given number 5 is Odd.");
-}else{
-       console.log("The given number 5 is Even.");
-}
+checkOddEven(numbers[0]);  
+checkOddEven(numbers[1]);  
+checkOddEven(numbers[2]);  
+checkOddEven(numbers[3]);  
+checkOddEven(numbers[4]);
